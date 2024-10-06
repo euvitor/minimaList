@@ -51,9 +51,9 @@ updateProgress = () => {
     progressBar.style.width = `${progress}%`;
 
     status.innerHTML = `${completedTasks} / ${totalTasks}`;
-    // if (tasks.length && completedTasks === totalTasks) {
-    //     blastConfetti();
-    // }
+    if (tasks.length && completedTasks === totalTasks) {
+        blastConfetti();
+    }
 }
 
 const updateTasksList = () => {
@@ -86,34 +86,34 @@ document.getElementById('taskSubmit').addEventListener('click', function (e) {
     addTask();
 })
 
-// const blastConfetti = () => {
-//     const defaults = {
-//         spread: 360,
-//         ticks: 50,
-//         gravity: 0,
-//         decay: 0.94,
-//         startVelocity: 30,
-//         shapes: ["star"],
-//         colors: ["#000", "#555"],
-//     };
+const blastConfetti = () => {
+    const defaults = {
+        spread: 360,
+        ticks: 50,
+        gravity: 0,
+        decay: 0.94,
+        startVelocity: 30,
+        shapes: ["star"],
+        colors: ["#000", "#555"],
+    };
 
-//     function shoot() {
-//         confetti({
-//             ...defaults,
-//             particleCount: 40,
-//             scalar: 1.2,
-//             shapes: ["star"],
-//         });
+    function shoot() {
+        confetti({
+            ...defaults,
+            particleCount: 40,
+            scalar: 1.2,
+            shapes: ["star"],
+        });
 
-//         confetti({
-//             ...defaults,
-//             particleCount: 10,
-//             scalar: 0.75,
-//             shapes: ["circle"],
-//         });
-//     }
+        confetti({
+            ...defaults,
+            particleCount: 10,
+            scalar: 0.75,
+            shapes: ["circle"],
+        });
+    }
 
-//     setTimeout(shoot, 0);
-//     setTimeout(shoot, 100);
-//     setTimeout(shoot, 200);
-// }
+    setTimeout(shoot, 0);
+    setTimeout(shoot, 100);
+    setTimeout(shoot, 200);
+}
