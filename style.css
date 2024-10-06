@@ -13,6 +13,7 @@
 
 body {
   background: url("./imgs/bg.png");
+  transform: scale(.8);
 }
 
 p{
