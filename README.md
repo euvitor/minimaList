@@ -26,3 +26,7 @@ Uma aplicação simples de lista de tarefas (To-Do List), chamada de minimaList,
     - Por Anggara via [Flaticon](https://www.flaticon.com/br/autores/anggara)
 - **Efeito de Confete:**
     - Animação de confete: [particles.js](https://particles.js.org/)
+### 📸 Screenshot
+
+![image](https://github.com/user-attachments/assets/71f0764e-855c-4f9c-b952-ce0d9b1e094c)
+
